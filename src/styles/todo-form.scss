@@ -16,7 +16,8 @@
                 padding-left: 10px;
                 border-radius: 4px;
                 border: 1px solid #FF8303;
-                background-color: #1B1A17;
+                background-color: #242320;
+                color: #FFFFFF;
                 font-weight: 550;
             }
       }
@@ -32,4 +33,24 @@
         background-color: #1B1A17;
         cursor: pointer;
       }
+}
+
+.zero-task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 80px;
+
+        hr{
+            width: 70px;
+            border: 3px solid #FF8303;
+            border-radius: 4px;
+        }
+
+        p {
+            font-family: "Inter";
+            font-size: 24px;
+            color: #FFFFFF;
+        }
 }

@@ -6,18 +6,26 @@
     <title>Todo-list</title>
     <link rel="stylesheet" href="src/styles/common.css" />
     <link rel="stylesheet" href="src/styles/todo-form.css" />
+    <link rel="stylesheet" href="src/styles/task-style.css" />
   </head>
   <body>
     <div class="todo-form-container">
       <div class="todo-inputs">
-        <input type="text" placeholder="Title..." name="" id="" />
-        <input type="text" placeholder="About..." name="" id="" />
+        <input type="text" placeholder="Title..." name="" id="input-title" />
+        <input type="text" placeholder="About..." name="" id="input-about" />
       </div>
-      <div class="add-todo-button">
-        <button>
+      <div class="add-todo-button-container">
+        <button id="add-task-button">
           <img src="src/assets/images/plus-button.svg" alt="" />
         </button>
       </div>
     </div>
+    <div class="zero-task-container">
+      <hr />
+      <p>No tasks</p>
+      <hr />
+    </div>
+    <div class="tasks-container"></div>
   </body>
+  <script src="src/scripts/add-task.js"></script>
 </html>
