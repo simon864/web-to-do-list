@@ -29,7 +29,7 @@
   color: #FFFFFF;
   background-color: #242320;
 }
-.tasks-container div .text-task-container {
+.tasks-container div .text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,28 +38,30 @@
       -ms-flex-direction: column;
           flex-direction: column;
   border: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 70%;
+  line-height: 30px;
+}
+.tasks-container div .delete-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  border: none;
 }
 .tasks-container div .delete-task-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 2px solid #FF8303;
   background-color: #1B1A17;
   cursor: pointer;
-}
-.tasks-container div .delete-task-button button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }

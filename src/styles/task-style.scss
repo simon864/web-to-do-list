@@ -15,24 +15,32 @@
         color: #FFFFFF;
         background-color: #242320;
 
-            .text-task-container {
+            .text-container {
                 display: flex;
                 flex-direction: column;
                 border: none;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 70%;
+                line-height: 30px;
             }
 
+        .delete-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            border: none;
+        }
+
             .delete-task-button {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                width: 32px;
+                height: 32px;
+                border-radius: 8px;
+                border: 2px solid #FF8303;
                 background-color: #1B1A17;
                 cursor: pointer;
-
-                    button {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
             }
     }
 }
