@@ -12,7 +12,7 @@
   margin: 20px;
   gap: 16px;
 }
-.tasks-container div {
+.tasks-container .task-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,11 +25,12 @@
           justify-content: space-between;
   border: 2px solid #FF8303;
   border-radius: 8px;
-  padding: 10px;
+  padding: 4px 10px 4px 10px;
   color: #FFFFFF;
   background-color: #242320;
+  cursor: pointer;
 }
-.tasks-container div .text-container {
+.tasks-container .task-container .text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,13 +39,13 @@
       -ms-flex-direction: column;
           flex-direction: column;
   border: none;
+  width: 70%;
+  line-height: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 70%;
-  line-height: 30px;
 }
-.tasks-container div .delete-button-container {
+.tasks-container .task-container .delete-button-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,14 +55,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
   border: none;
 }
-.tasks-container div .delete-task-button {
+.tasks-container .task-container .delete-task-button {
   width: 32px;
   height: 32px;
   border-radius: 8px;
   border: 2px solid #FF8303;
   background-color: #1B1A17;
   cursor: pointer;
+}
+.tasks-container .task-container .delete-task-button img {
+  pointer-events: none;
 }

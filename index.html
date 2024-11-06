@@ -7,8 +7,22 @@
     <link rel="stylesheet" href="src/styles/common.css" />
     <link rel="stylesheet" href="src/styles/todo-form.css" />
     <link rel="stylesheet" href="src/styles/task-style.css" />
+    <link rel="stylesheet" href="src/styles/confirmation-window.css" />
+    <link rel="stylesheet" href="src/styles/tools-style.css" />
+    <link rel="stylesheet" href="src/styles/edit-form.css" />
+    <link rel="stylesheet" href="src/styles/share.css" />
   </head>
-  <body>
+  <body id="body">
+    <div class="modal-backdrop"></div>
+    <div class="confirmation-window-container">
+      <div class="window-text-container">
+        <p>Delete this task?</p>
+      </div>
+      <div class="window-button-container">
+        <button class="window-button-yes"><span>Yes</span></button>
+        <button class="window-button-no"><span>No</span></button>
+      </div>
+    </div>
     <div class="todo-form-container">
       <div class="todo-inputs">
         <input type="text" placeholder="Title..." name="" id="input-title" />
